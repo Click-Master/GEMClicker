@@ -26,6 +26,8 @@ V3 of the script has a dedicated variable that defines the wait time before clic
 if your computer is powerful enough you may leave it 3600 millis
 
 But if you have a script throttling problem or just want to increase the speed of clicking - decrease it(I'm setting it to 1500)
+![image](https://github.com/Click-Master/GEMClicker/assets/159848054/68580b78-6a86-4364-a028-dc3a0982d1da)
+
 
    
 
