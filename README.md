@@ -12,7 +12,7 @@ Notes:
 Here is the registration link: [https://gemlightyear.com](https://gemlightyear.com/registration/referral/xda0j7)
 ## How to install
 1) install the [selenium-ide plugin](https://chromewebstore.google.com/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd) for Chrome. [image](https://github.com/Click-Master/GEMClicker/assets/159848054/fc6deff3-c584-4831-8fec-fab169b51212)
-2) download the script with [GEM clicker V2.side](https://github.com/Click-Master/GEMClicker/blob/main/script/GEM%20clicker%20V2.side) format to your computer ![image](https://github.com/Click-Master/GEMClicker/assets/159848054/7b5a1227-5bde-49f4-ba7a-4f5e7f1f3a48)
+2) download the latest version of the script with [GEM clicker V3.side](https://github.com/Click-Master/GEMClicker/blob/main/script/GEM%20clicker%20V3.side) format to your computer ![image](https://github.com/Click-Master/GEMClicker/assets/159848054/7b5a1227-5bde-49f4-ba7a-4f5e7f1f3a48)
 3) open the selenium-ide plugin. ![visual help](https://github.com/Click-Master/GEMClicker/assets/159848054/eded5d47-b001-4079-abc0-7d941fa55020)
 4) open the downloaded script(GEM clicker V2.side) in the plugin. [visual help](https://github.com/Click-Master/GEMClicker/assets/159848054/376c423a-5be6-484d-be29-4f0257fd97c1)
 5) login into your account, so that you can open the [game in Chrome](https://gemlightyear.com/dashboard/game)
