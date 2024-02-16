@@ -1,0 +1,186 @@
+{
+  "id": "5c4a6097-75ca-497f-bd2d-fd289189ffe8",
+  "version": "2.0",
+  "name": "GEM clicker",
+  "url": "https://gemlightyear.com/dashboard/game",
+  "tests": [{
+    "id": "4e2e6e16-070a-4c18-8f29-03525436529f",
+    "name": "GEM click",
+    "commands": [{
+      "id": "3419f0c7-ac84-41e3-8bd0-ec441ff160eb",
+      "comment": "",
+      "command": "store",
+      "target": "3500",
+      "targets": [],
+      "value": "WaitBeforeClickMilliseconds"
+    }, {
+      "id": "12714c23-79ff-4bdb-9a05-8d9fb08e7b12",
+      "comment": "",
+      "command": "store",
+      "target": "0",
+      "targets": [],
+      "value": "clickCounter"
+    }, {
+      "id": "f525191b-fa81-4be0-b8a5-cb49ce7c70d0",
+      "comment": "",
+      "command": "store",
+      "target": "10000",
+      "targets": [],
+      "value": "InitialClicksTotal"
+    }, {
+      "id": "2dfdee8a-a959-4132-aeb6-6205ea8f519b",
+      "comment": "",
+      "command": "store",
+      "target": "50",
+      "targets": [],
+      "value": "InitialReloadCounter"
+    }, {
+      "id": "b90ef0ce-5924-421f-a77a-894a5efb9aa8",
+      "comment": "",
+      "command": "store",
+      "target": "${InitialReloadCounter}",
+      "targets": [],
+      "value": "reloadCounter"
+    }, {
+      "id": "6ab6bc64-87fc-4fa2-be7c-9256b74cddb5",
+      "comment": "",
+      "command": "open",
+      "target": "https://gemlightyear.com/dashboard/game",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0cda3bc-6381-4e2b-b1cf-3dd9a9412f40",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1300x734",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7130d235-94f9-4709-9ed8-6898721cb5c3",
+      "comment": "",
+      "command": "times",
+      "target": "${InitialClicksTotal}",
+      "targets": [],
+      "value": "100000"
+    }, {
+      "id": "d84701a7-2dcb-4a35-929a-5bd2a5d75e42",
+      "comment": "",
+      "command": "pause",
+      "target": "${WaitBeforeClickMilliseconds}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac09d60d-abe8-4acb-944c-7081fe0365f7",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return parseInt(${reloadCounter}) - 1",
+      "targets": [],
+      "value": "reloadCounter"
+    }, {
+      "id": "e71d8806-e98d-4d40-bcf4-9e25a3b1ea28",
+      "comment": "",
+      "command": "echo",
+      "target": "Clicks before reload: ${reloadCounter}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1cb3814c-13ba-4154-9553-9ba12e544b32",
+      "comment": "",
+      "command": "echo",
+      "target": "Total clicks: ${clickCounter}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "495e1bc6-e6f7-449a-8ef8-02ed4cec659f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return parseInt(${clickCounter}) + 1",
+      "targets": [],
+      "value": "clickCounter"
+    }, {
+      "id": "f08aff15-fc17-454e-983c-53e9e6017b6a",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//div[contains(@class, 'gla-position--active')]",
+      "targets": [],
+      "value": "glaPositionCount"
+    }, {
+      "id": "e8ca0ed9-88be-4812-aab1-ebe159825e7b",
+      "comment": "",
+      "command": "if",
+      "target": "${reloadCounter} <=0 || ${glaPositionCount}<1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f4b0356-edaf-49c9-b6ac-4bde24d5d537",
+      "comment": "",
+      "command": "echo",
+      "target": "Relouding... \\n ClicksBeforeReloud: ${reloadCounter}, ClickElementsFound: ${glaPositionCount}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ed8a569-659a-4d16-a7e2-6b8cc6ecb32b",
+      "comment": "",
+      "command": "open",
+      "target": "https://gemlightyear.com/dashboard/game",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f120f60c-90b4-46c2-8d15-6e5d703f94b1",
+      "comment": "",
+      "command": "store",
+      "target": "${InitialReloadCounter}",
+      "targets": [],
+      "value": "reloadCounter"
+    }, {
+      "id": "2b8baf8d-8f0f-4195-ba7b-d627223cf437",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93b6eb5a-20f6-403f-a6c7-6c1bfec51ff0",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac64fadc-2362-4082-afe3-3c41f39dd750",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[contains(@class, 'gla-position--active')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "b89534eb-1920-4622-8df6-818e98a631bd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[contains(@class, 'gla-position--active')]",
+      "targets": [
+        ["css=.gla-position", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div[2]/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d587392-abed-464f-8ed3-8ef5defee5a5",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "08a45566-c8e9-4adc-a548-3d49e5d6caab",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://gemlightyear.com/", "https://gemlightyear.com/dashboard/game", "https://t.me/herewalletbot/app?startapp=157152"],
+  "plugins": []
+}
