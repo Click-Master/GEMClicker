@@ -19,7 +19,13 @@ Here is the registration link: [https://gemlightyear.com](https://gemlightyear.c
 6) start the script and enjoy. [visual help](https://github.com/Click-Master/GEMClicker/assets/159848054/4bb8fd72-c514-47fa-a4e3-dbb855c0f8df)
 
 
+## Advanced Usage
+### Increase the speed of clicking
+V3 of the script has a dedicated variable that defines the wait time before click in milliseconds - **WaitBeforeClickMilliseconds**
 
+if your computer is powerful enough you may leave it 3600 millis
+
+But if you have a script throttling problem or just want to increase the speed of clicking - decrease it(I'm setting it to 1500)
 
    
 
